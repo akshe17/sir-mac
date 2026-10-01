@@ -1,7 +1,7 @@
 import Link from "next/link";
-import eve from '../public/eve.jpg';
+import award1 from '../../public/award1.webp';
 
-import eve2 from '../public/eve2.jpg'
+import award2 from '../../public/award2.jpg';
 import Image from "next/image";
 export default function Home() {
   return (
@@ -31,6 +31,7 @@ export default function Home() {
           </Link>
         </div>
       </nav>
+      <h1 className="text-5xl">AWARDS</h1>
 
 
 
@@ -38,28 +39,28 @@ export default function Home() {
 
         <div>
            <Image
-              src={eve}
-              width={200}
-              height={200}
+              src={award1}
+              width={500}
+              height={500}
               alt="image1"
               className="object-cover"
     
             />
-             <Image
-              src={eve2}
-              width={200}
-              height={200}
-              alt="image2"
+
+            <Image
+              src={award2}
+              width={500}
+              height={500}
+              alt="image1"
               className="object-cover"
     
             />
         </div>
 
-        <div className="flex flex-col p-5">
-          <h1 className="text-8xl">
-      EVE HARAPECO イブ
-      </h1>
-      <p > is a Japanese singer-songwriter and Vocaloid producer.</p>
+        <div>
+          <h1 className="text-2xl">
+The Japanese singer-songwriter Eve founded the clothing brand Harapeco in 2016 and previously used the indie label name Harapeco Records, but his music has won and been nominated for mainstream Japanese and international awards
+    </h1>
         </div>
 
       </main>

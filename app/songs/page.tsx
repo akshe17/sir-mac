@@ -1,8 +1,8 @@
 import Link from "next/link";
-import eve from '../public/eve.jpg';
-
-import eve2 from '../public/eve2.jpg'
+import song1 from '../../public/song1.jpg';
+import song2 from '../../public/song2.jpg';
 import Image from "next/image";
+
 export default function Home() {
   return (
     <div className="min-h-screen bg-black text-white flex flex-col p-6">
@@ -31,39 +31,51 @@ export default function Home() {
           </Link>
         </div>
       </nav>
+      <h1 className="text-5xl">SONGS</h1>
 
 
 
-      <main className="flex flex-row justify between p-4">
+      <div className="flex flex-row justify between p-4">
 
         <div>
            <Image
-              src={eve}
+              src={song1}
               width={200}
               height={200}
               alt="image1"
               className="object-cover"
     
             />
-             <Image
-              src={eve2}
+        </div>
+
+        <div>
+          <h1 className="text-2xl">
+"Dramaturgy" (ドラマツルギー) is a hit J-pop and Vocaloid song by Japanese singer-songwriter Eve featuring Hatsune Miku, released in October 2017. 
+    </h1>
+        </div>
+
+      </div>
+  <div className="flex flex-row justify between p-4">
+
+        <div>
+           <Image
+              src={song2}
               width={200}
               height={200}
-              alt="image2"
+              alt="image1"
               className="object-cover"
     
             />
         </div>
 
-        <div className="flex flex-col p-5">
-          <h1 className="text-8xl">
-      EVE HARAPECO イブ
-      </h1>
-      <p > is a Japanese singer-songwriter and Vocaloid producer.</p>
+        <div>
+          <h1 className="text-2xl">
+         AI Overview
+        "How to Eat Life" (Inochi no Tabekata) is a popular song, light novel, and manga by the Japanese artist Eve that metaphorically explores anxiety, inner pain, and self-destruction.
+    </h1>
         </div>
 
-      </main>
-
+      </div>
 
       
 

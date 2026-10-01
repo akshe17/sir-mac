@@ -1,7 +1,7 @@
 import Link from "next/link";
-import eve from '../public/eve.jpg';
+import album1 from '../../public/album1.jpg';
 
-import eve2 from '../public/eve2.jpg'
+import album2 from '../../public/album2.jpg'
 import Image from "next/image";
 export default function Home() {
   return (
@@ -32,37 +32,53 @@ export default function Home() {
         </div>
       </nav>
 
+    <h1 className="text-5xl">ALBUMS</h1>
 
 
-      <main className="flex flex-row justify between p-4">
+
+
+      <div className="flex flex-row justify between p-4">
 
         <div>
            <Image
-              src={eve}
-              width={200}
-              height={200}
+              src={album1}
+              width={300}
+              height={300}
               alt="image1"
               className="object-cover"
     
             />
-             <Image
-              src={eve2}
-              width={200}
-              height={200}
-              alt="image2"
+        </div>
+
+        <div>
+          <h1 className="text-2xl">
+Round Robin (2015) – His 2nd independent album.
+    </h1>
+        </div>
+
+      </div>
+
+
+       <div className="flex flex-row justify between p-4">
+
+        <div>
+           <Image
+              src={album2}
+              width={300}
+              height={300}
+              alt="image1"
               className="object-cover"
     
             />
         </div>
 
-        <div className="flex flex-col p-5">
-          <h1 className="text-8xl">
-      EVE HARAPECO イブ
-      </h1>
-      <p > is a Japanese singer-songwriter and Vocaloid producer.</p>
+        <div>
+          <h1 className="text-2xl">
+Wonder Word (EP / Mini-Album, 2014 / 2015) – Eve's debut independent mini-album released under Harapeco Records.
+    </h1>
         </div>
 
-      </main>
+      </div>
 
 
       

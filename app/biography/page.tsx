@@ -1,7 +1,7 @@
 import Link from "next/link";
-import eve from '../public/eve.jpg';
+import eveface from '../../public/Eve_face.webp';
 
-import eve2 from '../public/eve2.jpg'
+import biogra from '../../public/biogra.jpg'
 import Image from "next/image";
 export default function Home() {
   return (
@@ -31,6 +31,7 @@ export default function Home() {
           </Link>
         </div>
       </nav>
+      <h1 className="text-5xl">BIOGRAPHY</h1>
 
 
 
@@ -38,28 +39,31 @@ export default function Home() {
 
         <div>
            <Image
-              src={eve}
-              width={200}
-              height={200}
+              src={eveface}
+              width={1000}
+              height={1000}
               alt="image1"
               className="object-cover"
     
             />
-             <Image
-              src={eve2}
-              width={200}
-              height={200}
-              alt="image2"
+
+            <Image
+              src={biogra}
+              width={1000}
+              height={1000}
+              alt="image1"
               className="object-cover"
     
             />
         </div>
 
-        <div className="flex flex-col p-5">
-          <h1 className="text-8xl">
-      EVE HARAPECO イブ
-      </h1>
-      <p > is a Japanese singer-songwriter and Vocaloid producer.</p>
+        <div>
+          <h1 className="text-2xl">
+
+            Eve[a] (born 23 May 1995) is a Japanese singer-songwriter and Vocaloid producer. He entered the music industry by singing covers of popular songs on Niconico.
+
+He signed to Toy's Factory in 2019, moving away from his independently owned label, Harapeco Records, of whom Eve had produced under since the release of his debut album, Wonder Word.[2] He was also a guest in "School of Lock!" by Tokyo FM.[3]
+    </h1>
         </div>
 
       </main>
